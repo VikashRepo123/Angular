@@ -1,0 +1,19 @@
+<div class="container my-4 col-md-4">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" formControlName="email">
+          <!-- <span class="help-block" *ngIf="!loginForm.get('email')?.valid && loginForm.get('email')?.touched">Please enter a valid email!.</span> -->
+          <!-- <span class="help-block" *ngIf="loginForm.get('email')?.errors?.['nameIsForbidden']">This is the invalid email!.</span> -->
+          <span class="help-block" *ngIf="loginForm.get('email')?.errors?.['required'] && loginForm.get('email')?.touched">This field is required!.</span>
+          <span class="help-block" *ngIf="loginForm.get('email')?.errors?.['email'] && loginForm.get('email')?.touched">This is the invalid email!.</span>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" formControlName="pass">
+          <span class="help-block" *ngIf="loginForm.get('pass')?.errors?.['required'] && loginForm.get('pass')?.touched">This field is required!.</span>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>

@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "fname": "vikash",
+      "lname": "maskhare",
+      "email": "ajsa@sd.com",
+      "mobile": "9284928323",
+      "salary": "16000"
+    },
+    {
+      "fname": "sanu",
+      "lname": "maskhare",
+      "email": "any@akaka.com",
+      "mobile": "928191918",
+      "salary": "120000",
+      "id": 2
+    },
+    {
+      "fname": "vikash",
+      "lname": "maskhare",
+      "email": "ajsa@sd.com",
+      "mobile": "9284928323",
+      "salary": "13000",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "login": [
+    {
+      "email": "any@akaka.com",
+      "password": "12345"
+    },
+    {
+      "email": "any2@akaka.com",
+      "password": "12345"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+For install json-server: "npm install -g json-server"
+
+To run json-server: "json-server --watch db.json"
+
+
+Angular Guards - Angular's router guards are interface which tell the router that user has permission to access the route or not.
+There are 5 types of guards:
+1) canActivate
+2) canActivateChild
+3) canDeactivate
+4) canLoad
+5) Resolve
+
+to create guards, run "ng g guard NameOfGuard"
